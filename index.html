@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Sheet</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- space font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Avenir -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+    <nav >
+        <img src="./images/navRed.png" alt="">
+        <img src="./images/navOrange.png" alt="">
+        <img src="./images/navGreen.png" alt="">
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SIDE EFFECT -->
+        <div class="sideEffect">
+            <div class="logo">  
+                <img src="./images/logo.png" alt="">
+                <p>Aerten</p>
+            </div>
+            <div class="dashBorad flexIcon">
+                <img src="./images/dashBorad.png" alt="">
+                <p>Dashboard</p>
+            </div>
+            <div class="roles flexIcon flexIconMargin">
+                <img src="./images/roles.png" alt="">
+                <p><a href="./html/rolepg.html">Roles</a></p>
+            </div>
+            <div class="employees flexIcon flexIconMargin">
+                <img src="./images/emolyees.png" alt="">
+                <p>Employees</p>
+                <img src="./images/arrowDown.png" alt="">
+            </div>
+            <div class="sideUnodered">
+                <ul>
+                    <li>All Employees</li>
+                    <li>Recent hires</li>
+                </ul>
+            </div>
+            <div class="payroll flexIcon flexIconMargin">
+                <img src="./images/payroll.png" alt="">
+                <p>Payroll</p>
+            </div>
+            <div class="reports flexIcon flexIconMargin">
+                <img src="./images/report.png" alt="">
+                <p>Reports</p>
+            </div>
+            <div class="settings flexIcon flexIconMargin">
+                <img src="./images/settingSide.png" alt="">
+                <p>Settings</p>
+            </div>
+            <!-- sideEffect -->
+        </div>
+
+        <!-- MAIN SECTION -->
+        <div class="mainSection">
+            <div class="top">
+                <div class="search">
+                    <img src="./images/search2.png" alt="">
+                    <input type="text" name="search" id="search" placeholder="Search anything here">
+                </div>
+                
+                <div class="profile">
+                    <img src="./images/setting.png" alt="setting">
+                    <img src="./images/bell.png" alt="Bell icon">
+                    <img src="./images/profileimg.png" alt="profile">
+                </div>
+            </div>
+
+            <!-- SECOND ROW -->
+            <div class="secondRow">
+                <div class="employeeRow">
+                    <p>Employees</p>
+                    <img src="./images/question.png" alt="">
+                    <p>100</span>
+                </div>
+
+                <div class="left">
+                    <div class="export">
+                        <img src="./images/export.png" alt="">
+                        <span>Export</span>
+                    </div>
+                    <div class="newEmployer">
+                        <img src="./images/newEmployer.png" alt="">
+                        <span>New Employee</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIRDROW -->
+
+            <div class="thirdRow">
+                <ul>
+                    <li><a href="#" class="allEmployee">All Employees</a></li>
+                    <li><a href="./html/teams.html">Teams</a></li>
+                    <li><a href="./html/roles.html">Roles</a></li>
+                </ul>
+            </div>
+                <!--FORTH ROW -->
+            <div class="forthRow top">
+                <div class="search2">
+                    <img src="./images/search2.png" alt="">
+                    <input type="text" name="search" id="search" placeholder="Search Employee by name, role, ID or any related keywords">
+                </div>
+                
+                <div class="icons profile">
+                 <div>
+                    <img src="./images/Filters.png" alt="">
+                    <span>Filter</span>
+                 </div>
+                 <div>
+                    <img src="./images/List_Unordered.png" alt="">
+                 </div>
+                 <div>
+                    <img src="./images/gallery.png" alt="">
+                 </div>
+                </div>
+            </div>
+            <div class="tableContainer">
+                <table>
+                    <tr class="rowOne">
+                        <th><input type="checkbox" name="checkbox"> <span>Name</span></th>
+                        <th>Employee ID</th>
+                        <th>Role <img src="./images/question.png" alt=""></th>
+                        <th>Status</th>
+                        <th>Teams</th>
+                        <th></th>
+                    </tr>
+            
+                    
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image1.png" alt=""><div><p>Tanner Finsha</p><p>@Tannerfisher@gmail.com</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Full time</p></div></td>
+                        <td class="dataFour"><ul><li>Active</li></ul></td>
+                        <td class="dataFive"><span>Marketing</span><span>Design</span><span>+1</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image2.png" alt=""><div><p>Emeto  Winner </p><p>Emetowinner@gmail.com</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Contract </p></div></td>
+                        <td class="dataFour"><ul><li>Active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span><span>+1</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image3.png" alt=""><div><p>Tassy Omah</p><p>Tassyomah@gmail.com</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour inRed"><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image4.png" alt=""><div><p>James Muriel</p><p>JamesMuriel@A</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour inRed"><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image5.png" alt=""><div><p>Emeto  Winner</p><p>JamesMuriel@A</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour inRed"><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span><span>+3</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image4.png" alt=""><div><p>Emeto  Winner</p><p>JamesMuriel@A</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour "><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image4.png" alt=""><div><p>Emeto Winner</p><p>JamesMuriel@A</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour "><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+
+                    
+                    <tr class="rowTwo">
+                        <td class="dataOne"><input type="checkbox" name="checkbox"><img src="./images/image4.png" alt=""><div><p>James Muriel</p><p>JamesMuriel@A</p></div></td>
+                        <td class="dataTwo"><p>#23454GH6J7YT6</p></td>
+                        <td class="dataThree"><div><p>Product Designer</p><p>Associate</p></div></td>
+                        <td class="dataFour inRed"><ul><li>active</li></ul></td>
+                        <td class="dataFive"><span>Product</span><span>Design</span></td>
+                        <td class="dataSix"><img src="./images/dotsDropdown.png" alt=""></td>
+                    </tr>
+                </table>
+                <div class="bottomTable">
+                    <div class="arrowLeft">
+                        <img src="./images/arrowLeft.png" alt="">
+                        <p>Previous</p>
+                    </div>
+                    <div class="numberSet">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p><img src="./images/numberdots.png" alt=""></p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                    </div>
+                    <div class="next">
+                        <p>Next</p>
+                        <img src="./images/arrowright.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>mainSection</div>
+        </div>
+    </main>
+
+
+    <script src="./js/index2.js"></script>
+</body>
+</html>
