@@ -22,246 +22,313 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- NAV -->
-    <nav >
-        <img src="../images/navRed.png" alt="">
-        <img src="../images/navOrange.png" alt="">
-        <img src="../images/navGreen.png" alt="">
-    </nav>
 
-    <!-- MAIN -->
-    <main>
-        <!-- SIDE EFFECT -->
-        <div class="sideEffect">
-            <div class="logo">  
-                <img src="../images/logo.png" alt="">
-                <p>Aerten</p>
+    <div id="blur">
+ <!-- NAV -->
+ <nav >
+    <img src="../images/navRed.png" alt="">
+    <img src="../images/navOrange.png" alt="">
+    <img src="../images/navGreen.png" alt="">
+</nav>
+
+<!-- MAIN -->
+<main>
+    <!-- SIDE EFFECT -->
+    <div class="sideEffect">
+        <div class="logo">  
+            <img src="../images/logo.png" alt="">
+            <p>Aerten</p>
+        </div>
+        <div class="dashBorad flexIcon">
+            <img src="../images/dashBorad.png" alt="">
+            <p>Dashboard</p>
+        </div>
+        <div class="employees  flexIcon flexIconMargin">
+            <img src="../images/rolesWhite.png" alt="">
+            <p>Roles</p>
+        </div>
+        <div class="roles flexIcon flexIconMargin">
+            <img src="../images/emolyees.png" alt="">
+            <p><a href="../index.html">Employees</a></p>
+            <!-- <img src="../images/arrowDown.png" alt=""> -->
+        </div>
+        <div class="sideUnodered">
+            <ul>
+                <li>All Employees</li>
+                <li>Recent hires</li>
+            </ul>
+        </div>
+        <div class="payroll flexIcon flexIconMargin">
+            <img src="../images/payroll.png" alt="">
+            <p>Payroll</p>
+        </div>
+        <div class="reports flexIcon flexIconMargin">
+            <img src="../images/report.png" alt="">
+            <p>Reports</p>
+        </div>
+        <div class="settings flexIcon flexIconMargin">
+            <img src="../images/settingSide.png" alt="">
+            <p>Settings</p>
+        </div>
+        <div class="logOut flexIcon flexIconMargin">
+            <img src="../images/Logoutright.png" alt="">
+            <p>Log out</p>
+        </div>
+        <!-- sideEffect -->
+    </div>
+
+    <!-- MAIN SECTION -->
+    <div class="mainSection">
+        <div class="top">
+            <div class="search">
+                <img src="../images/search2.png" alt="">
+                <input type="text" name="search" id="search" placeholder="Search anything here">
             </div>
-            <div class="dashBorad flexIcon">
-                <img src="../images/dashBorad.png" alt="">
-                <p>Dashboard</p>
+            
+            <div class="profile">
+                <img src="../images/setting.png" alt="setting">
+                <img src="../images/bell.png" alt="Bell icon">
+                <img src="../images/profileimg.png" alt="profile">
             </div>
-            <div class="employees  flexIcon flexIconMargin">
-                <img src="../images/rolesWhite.png" alt="">
+        </div>
+
+        <!-- SECOND ROW -->
+        <div class="secondRow">
+            <div class="employeeRow">
                 <p>Roles</p>
+                <img src="../images/question.png" alt="">
+                <p>123</span>
             </div>
-            <div class="roles flexIcon flexIconMargin">
-                <img src="../images/emolyees.png" alt="">
-                <p><a href="../index.html">Employees</a></p>
-                <!-- <img src="../images/arrowDown.png" alt=""> -->
+
+            <div class="left">
+                <div class="export assign" id="assignButton" onclick="togglePopup()">
+                    <img src="../images/Assign.png" alt="">
+                    <span>Assign</span>
+                </div>
+                
+                <div class="newEmployer">
+                    <img src="../images/newRole.png" alt="">
+                    <span>New Role</span>
+                </div>
             </div>
-            <div class="sideUnodered">
-                <ul>
-                    <li>All Employees</li>
-                    <li>Recent hires</li>
-                </ul>
-            </div>
-            <div class="payroll flexIcon flexIconMargin">
-                <img src="../images/payroll.png" alt="">
-                <p>Payroll</p>
-            </div>
-            <div class="reports flexIcon flexIconMargin">
-                <img src="../images/report.png" alt="">
-                <p>Reports</p>
-            </div>
-            <div class="settings flexIcon flexIconMargin">
-                <img src="../images/settingSide.png" alt="">
-                <p>Settings</p>
-            </div>
-            <div class="logOut flexIcon flexIconMargin">
-                <img src="../images/Logoutright.png" alt="">
-                <p>Log out</p>
-            </div>
-            <!-- sideEffect -->
         </div>
 
-        <!-- MAIN SECTION -->
-        <div class="mainSection">
-            <div class="top">
-                <div class="search">
-                    <img src="../images/search2.png" alt="">
-                    <input type="text" name="search" id="search" placeholder="Search anything here">
-                </div>
-                
-                <div class="profile">
-                    <img src="../images/setting.png" alt="setting">
-                    <img src="../images/bell.png" alt="Bell icon">
-                    <img src="../images/profileimg.png" alt="profile">
-                </div>
+        <!-- THIRDROW -->
+
+        <div class="thirdRow">
+            <ul>
+                <li><a href="#" class="allEmployee">All roles</a></li>
+                <li><a href="../html/teams.html">Permissions</a></li>
+                <!-- <li><a href="./html/roles.html">Roles</a></li> -->
+            </ul>
+        </div>
+            <!--FORTH ROW -->
+        <div class="forthRow top">
+            <div class="search2">
+                <img src="../images/search2.png" alt="">
+                <input type="text" name="search" id="search" placeholder="Search Roles by Title, Teams or any related keywords">
             </div>
-
-            <!-- SECOND ROW -->
-            <div class="secondRow">
-                <div class="employeeRow">
-                    <p>Roles</p>
-                    <img src="../images/question.png" alt="">
-                    <p>123</span>
-                </div>
-
-                <div class="left">
-                    <div class="export">
-                        <img src="../images/export.png" alt="">
-                        <span>Export</span>
-                    </div>
-                    <div class="newEmployer">
-                        <img src="../images/newEmployer.png" alt="">
-                        <span>New Employee</span>
-                    </div>
-                </div>
+            
+            <div class="icons profile">
+             <div>
+                <img src="../images/Filters.png" alt="">
+                <span>Filter</span>
+             </div>
+             <div>
+                <img src="../images/List_Unordered.png" alt="">
+             </div>
+             <div>
+                <img src="../images/gallery.png" alt="">
+             </div>
             </div>
+        </div>
 
-            <!-- THIRDROW -->
 
-            <div class="thirdRow">
-                <ul>
-                    <li><a href="#" class="allEmployee">All roles</a></li>
-                    <li><a href="../html/teams.html">Permissions</a></li>
-                    <!-- <li><a href="./html/roles.html">Roles</a></li> -->
-                </ul>
-            </div>
-                <!--FORTH ROW -->
-            <div class="forthRow top">
-                <div class="search2">
-                    <img src="../images/search2.png" alt="">
-                    <input type="text" name="search" id="search" placeholder="Search Roles by Title, Teams or any related keywords">
+        <div class="thirdRow">
+            <ul>
+                <li><a href="#" class="allEmployee">All</a></li>
+                <li><a href="../html/teams.html">Product</a></li>
+                <li><a href="./html/roles.html">Engineering</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="../html/teams.html">Recruitment</a></li>
+                <li><a href="./html/roles.html">Sales</a></li>
+                <li><a href="./html/roles.html">Customer service</a></li>
+            </ul>
+        </div>
+
+        <div class="tableContainer allBoxes">
+
+            <div class="boxe1">
+                <div class="row1Box">
+                    <p>Solution Sales Specialist </p>
+                    <img src="../images/groupPic.png" alt="">
                 </div>
-                
-                <div class="icons profile">
-                 <div>
-                    <img src="../images/Filters.png" alt="">
-                    <span>Filter</span>
-                 </div>
-                 <div>
-                    <img src="../images/List_Unordered.png" alt="">
-                 </div>
-                 <div>
-                    <img src="../images/gallery.png" alt="">
-                 </div>
+                <div class="rolepara">
+                    Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
                 </div>
-            </div>
-
-
-            <div class="thirdRow">
-                <ul>
-                    <li><a href="#" class="allEmployee">All</a></li>
-                    <li><a href="../html/teams.html">Product</a></li>
-                    <li><a href="./html/roles.html">Engineering</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="../html/teams.html">Recruitment</a></li>
-                    <li><a href="./html/roles.html">Sales</a></li>
-                    <li><a href="./html/roles.html">Customer service</a></li>
-                </ul>
-            </div>
-
-            <div class="tableContainer allBoxes">
-
-                <div class="boxe1">
-                    <div class="row1Box">
-                        <p>Solution Sales Specialist </p>
-                        <img src="../images/groupPic.png" alt="">
-                    </div>
-                    <div class="rolepara">
-                        Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
-                    </div>
-                    <div class="allroles">
-                        <p>Marketing</p>
-                        <p>Product</p>
-                        <p>Engineering</p>
-                        <p>Design</p>
-                    </div>
-
-                    <div class="downProfile">
-                        <img src="../images/profilerole.png" alt="">
-                        <div>
-                            <p>James campion</p>
-                            <p>Manager</p>
-                        </div>
-                        <img src="../images/arrowrightrole.png" alt="">
-                    </div>
+                <div class="allroles">
+                    <p>Marketing</p>
+                    <p>Product</p>
+                    <p>Engineering</p>
+                    <p>Design</p>
                 </div>
-                <div class="boxe1">
-                    <div class="row1Box">
-                        <p>Solution Sales Specialist </p>
-                        <img src="../images/groupPic.png" alt="">
-                    </div>
-                    <div class="rolepara">
-                        Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
-                    </div>
-                    <div class="allroles">
-                        <p>Marketing</p>
-                        <p>Product</p>
-                        <p>Engineering</p>
-                        <p>Design</p>
-                    </div>
 
-                    <div class="downProfile">
-                        <img src="../images/profilerole.png" alt="">
-                        <div>
-                            <p>James campion</p>
-                            <p>Manager</p>
-                        </div>
-                        <img src="../images/arrowrightrole.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW TWO -->
-            <div class="tableContainer allBoxes">
-
-                <div class="boxe1">
-                    <div class="row1Box">
-                        <p>Solution Sales Specialist </p>
-                        <img src="../images/groupPic.png" alt="">
-                    </div>
-                    <div class="rolepara">
-                        Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
-                    </div>
-                    <div class="allroles">
-                        <p>Marketing</p>
-                        <p>Product</p>
-                        <p>Engineering</p>
-                        <p>Design</p>
-                    </div>
-
-                    <div class="downProfile">
-                        <img src="../images/profilerole.png" alt="">
-                        <div>
-                            <p>James campion</p>
-                            <p>Manager</p>
-                        </div>
-                        <img src="../images/arrowrightrole.png" alt="">
-                    </div>
-                </div>
-                <div class="boxe1">
-                    <div class="row1Box pushMore">
-                        <p>Solution Sales Specialist </p>
-                        <img src="../images/group2.png" alt="">
-                    </div>
-                    <div class="rolepara">
-                        Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
-                    </div>
+                <div class="downProfile">
+                    <img src="../images/profilerole.png" alt="">
                     <div>
-                        <p class="singlerow">Marketing and sales</p>
-                        <!-- <p>Product</p>
-                        <p>Engineering</p>
-                        <p>Design</p> -->
+                        <p>James campion</p>
+                        <p>Manager</p>
                     </div>
-
-                    <div class="downProfile">
-                        <img src="../images/profilerole.png" alt="">
-                        <div>
-                            <p>James campion</p>
-                            <p>Manager</p>
-                        </div>
-                        <img src="../images/arrowrightrole.png" alt="">
-                    </div>
+                    <img src="../images/arrowrightrole.png" alt="">
                 </div>
             </div>
-                
-            <div>mainSection</div>
-        </div>
-    </main>
+            <div class="boxe1">
+                <div class="row1Box">
+                    <p>Solution Sales Specialist </p>
+                    <img src="../images/groupPic.png" alt="">
+                </div>
+                <div class="rolepara">
+                    Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
+                </div>
+                <div class="allroles">
+                    <p>Marketing</p>
+                    <p>Product</p>
+                    <p>Engineering</p>
+                    <p>Design</p>
+                </div>
 
+                <div class="downProfile">
+                    <img src="../images/profilerole.png" alt="">
+                    <div>
+                        <p>James campion</p>
+                        <p>Manager</p>
+                    </div>
+                    <img src="../images/arrowrightrole.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW TWO -->
+        <div class="tableContainer allBoxes">
+
+            <div class="boxe1">
+                <div class="row1Box">
+                    <p>Solution Sales Specialist </p>
+                    <img src="../images/groupPic.png" alt="">
+                </div>
+                <div class="rolepara">
+                    Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
+                </div>
+                <div class="allroles">
+                    <p>Marketing</p>
+                    <p>Product</p>
+                    <p>Engineering</p>
+                    <p>Design</p>
+                </div>
+
+                <div class="downProfile">
+                    <img src="../images/profilerole.png" alt="">
+                    <div>
+                        <p>James campion</p>
+                        <p>Manager</p>
+                    </div>
+                    <img src="../images/arrowrightrole.png" alt="">
+                </div>
+            </div>
+            <div class="boxe1">
+                <div class="row1Box pushMore">
+                    <p>Solution Sales Specialist </p>
+                    <img src="../images/group2.png" alt="">
+                </div>
+                <div class="rolepara">
+                    Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.
+                </div>
+                <div>
+                    <p class="singlerow">Marketing and sales</p>
+                    <!-- <p>Product</p>
+                    <p>Engineering</p>
+                    <p>Design</p> -->
+                </div>
+
+                <div class="downProfile">
+                    <img src="../images/profilerole.png" alt="">
+                    <div>
+                        <p>James campion</p>
+                        <p>Manager</p>
+                    </div>
+                    <img src="../images/arrowrightrole.png" alt="">
+                </div>
+            </div>
+        </div>
+            
+        <div>mainSection</div>
+    </div>
+</main>
+    </div>
+   
+
+
+    
+    <div class="formrole" id="popup" style="display: none;">
+        <img src="../images/closeForm.png" class="firstImage" alt="" onclick="togglePopup()">
+        <form action="" class="mainForm" id="roleForm">
+            <div class="bag">
+                <img src="../images/bagForm.png" alt="">
+            <p>Assign this role</p>
+            <p>Select one or multiple employees to assign to this role  <span>"Senior Design Lead"</span> </p>
+            </div>
+
+            <div class="searchForm">
+                <img src="../images/setting.png"alt="">
+                <input type="text" name="searchForm" placeholder="Search for an indivdual or team">
+                <img src="../images/questionForm.png" alt="">
+            </div>
+
+           <div class="houseProfie">
+            <div class="employeeAndRoles">
+                <img src="../images/profile1Form.png" alt="">
+                <div class="erPara">
+                    <p>Jennifer Lopez</p>
+                    <p>Product Designer, Integrations</p>
+                </div>
+                <img src="../images/checkboxColored.png" alt="">
+            </div>
+            <div class="employeeAndRoles2">
+                <img src="../images/profile2Form.png" alt="">
+                <div class="erPara">
+                    <p>Tassy Omah  </p>
+                    <p>Developer Relations, Payments</p>
+                </div>
+                <input type="checkbox">
+            </div> 
+            <div class="employeeAndRoles2">
+                <img src="../images/profile3Form.png" alt="">
+                <div class="erPara">
+                    <p>Emeto winner </p>
+                    <p>Backend Developer, Payments</p>
+                </div>
+                <input type="checkbox">
+            </div> 
+            <div class="employeeAndRoles2">
+                <img src="../images/profile4Form.png" alt="">
+                <div class="erPara">
+                    <p>Jane mena </p>
+                    <p>Technical specialist, Enterprise</p>
+                </div>
+                <input type="checkbox">
+            </div> 
+            <div class="employeeAndRoles2">
+                <img src="../images/profile5Form.png" alt="">
+                <div class="erPara">
+                    <p>Kate Magnamay </p>
+                    <p>Product Manger, Dashboard</p>
+                </div>
+                <input type="checkbox">
+            </div> 
+           </div>
+        
+        </form>
+    </div>
 
     <script src="../js/index2.js"></script>
 </body>

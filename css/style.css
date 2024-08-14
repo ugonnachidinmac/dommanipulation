@@ -27,6 +27,7 @@ main {
   border: 1px solid #eff1f4;
   padding-right: 50px;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .sideEffect .logo {
@@ -174,17 +175,21 @@ main {
   border: 1px solid #e6e7ec;
   padding: 10px 16px 10px 16px;
   border-radius: 8px;
+  cursor: pointer;
 }
 .left .newEmployer {
   background: #6a1039;
   max-width: 159px;
   min-height: 44px;
-  border-radius: 10px 16px 10px 16px;
   border-radius: 8px;
+  display: flex;
+  gap: 5px;
   color: white;
+  padding:  10px 16px 10px 16px;
+  cursor: pointer;
 }
 .newEmployer img {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   max-width: 20px;
   min-height: 20px;
 }
@@ -192,7 +197,7 @@ main {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 20px; 
   text-align: left;
 }
 .thirdRow ul {
@@ -290,6 +295,10 @@ table {
   font-weight: 500;
   line-height: 18px;
   text-align: left;
+}
+
+.nameEmail p{
+  background: none;
 }
 
 .rowOne th:nth-child(1) {
@@ -448,7 +457,18 @@ table {
   border-left: 1.5px solid #eaecf0;
   border-right: 1.5px solid #eaecf0;
 }
+.inactive{
+  font-size: 12px;
+}
 
+.dataFour ul li{
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+text-align: center;
+
+}
 .bottomTable {
   max-width: 1209px;
   width: 100%; /* Ensure full width */
@@ -501,6 +521,10 @@ table {
   background: #eff1f4;
   padding-top: 10px;
 }
+
+
+
+
 
 .next {
   display: flex;
@@ -641,4 +665,231 @@ table {
 }
 .roles p a {
   text-decoration: none;
+}
+.assign {
+  width: 115px;
+  height: 44px;
+  padding: 10px 16px 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e7ec;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* FORM PAGE */
+
+.formrole {
+  width: 550px;
+  height: 750px;
+  /* border: 1px solid white; */
+  margin: 35px auto;
+  position: relative; /* This is important to position the image relative to the div */
+  background-color: white;
+}
+
+.firstImage {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  cursor: pointer; /* Optional: changes the cursor to a pointer when hovering over the image */
+}
+
+.mainForm {
+  width: 500px;
+  height: 750px;
+  top: 245px;
+  left: 457px;
+  padding: 20px 20px 62px 20px;
+  /* border-radius: 12px; */
+  /* border: 1px solid #10182808;
+  margin: 95px 60px 15px 15px;
+  box-shadow: 0px 8px 8px -4px #10182808;
+  box-shadow: 0px 20px 24px -4px #10182814; */
+  background: none;
+}
+.searchForm {
+  display: flex;
+  width: 446px;
+  height: 45px;
+  padding: 10px 14px 10px 14px;
+  gap: 15px;
+  border-radius: 8px;
+  border: 1px solid #eff1f4;
+}
+
+.searchForm input {
+  border: none;
+  outline: none; /* Optional: Removes the outline when the input is focused */
+  background: none;
+  margin-right: 180px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none; /* Removes the focus outline */
+  background-color: transparent; /* Optional: makes the background transparent */
+  /* Add any other desired styles */
+  margin-left: 25px;
+}
+.employeeAndRoles {
+  width: 424px;
+  height: 72px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff2ea;
+  display: flex;
+}
+
+.employeeAndRoles2 {
+  width: 424px;
+  height: 72px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+}
+.mainForm img:nth-child(1) {
+  margin-bottom: 25px;
+}
+.bag p:nth-child(2) {
+  font-family: Space Grotesk;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+.bag p:nth-child(3) {
+  max-width: 426px;
+  min-height: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.bag span {
+  font-weight: 700;
+  color: #6a1039;
+}
+.employeeAndRoles img:nth-child(1) {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.employeeAndRoles2 {
+  width: 424px;
+  height: 72px;
+  padding: 16px;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid #F5F6F7;
+  margin-top: 15px;
+}
+.employeeAndRoles2 img:nth-child(1) {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+.employeeAndRoles img:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  margin-left: 130px;
+}
+.employeeAndRoles2 input {
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  margin-left: 110px;
+  border-radius: 50%;
+  border: 1px solid #d0d5dd;
+}
+.employeeAndRoles2 input[type="checkbox"] {
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  /* margin-left: 130px; */
+  border-radius: 50%;
+  border: 1px solid #d0d5dd;
+}
+.erPara p:nth-child(1) {
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: left;
+}
+.houseProfie {
+  max-width: 446px;
+  min-height: 412px;
+  padding: 10px 16px 10px 12px;
+  border: 1px solid #f5f6f7;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.erPara p:nth-child(2) {
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #6a1039;
+}
+
+
+/* BLUR */
+/* Blurring the background */
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+  background-color: #344054;
+}
+
+/* Styling for the popup */
+#popup {
+  /* background-color: white; */
+  border-radius: 8px;
+  padding: 20px;
+  /* width: 400px; */
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 45px)); /* Center vertically with 45px margin-top */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+
+/* table changing */
+/* Normal table view */
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer tr {
+  display: table-row;
+}
+
+/* Block (two-column) view */
+.tableContainer.blockView table {
+  width: 100%;
+  display: block;
+}
+
+.tableContainer.blockView tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tableContainer.blockView th,
+.tableContainer.blockView td {
+  flex: 1 1 50%; /* Two columns */
 }
