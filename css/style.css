@@ -240,9 +240,9 @@ main {
 }
 
 .icons {
-  /* max-width: 192px; */
+
   display: flex;
-  /* margin-left: 50px; */
+
 }
 .icons div:nth-child(1) {
   max-width: 93px;
