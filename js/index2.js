@@ -109,6 +109,85 @@ document.getElementById('galleryView').addEventListener('click', function() {
     document.querySelector('.tableContainer').classList.add('blockView');
 });
 
+
+// PAGINATION
+
+document.addEventListener('DOMContentLoaded', () => {
+    const itemsPerPage = 8; // Number of items per page (change as needed)
+    const allPages = document.querySelectorAll('.numberSet .page-number');
+    let currentPage = 1;
+
+    // Function to update the active page and content
+    function updatePagination() {
+        allPages.forEach(page => {
+            page.classList.remove('active');
+            if (parseInt(page.textContent) === currentPage) {
+                page.classList.add('active');
+            }
+        });
+        // Update the page content here based on `currentPage` (implement as needed)
+    }
+
+    // Add event listeners to page numbers
+    allPages.forEach(page => {
+        page.addEventListener('click', () => {
+            currentPage = parseInt(page.textContent);
+            updatePagination();
+        });
+    });
+
+    // Handle 'Previous' button click
+    document.getElementById('arrowLeft').addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            updatePagination();
+        }
+    });
+
+    // Handle 'Next' button click
+    document.getElementById('next').addEventListener('click', () => {
+        if (currentPage < allPages.length) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    // Initialize the pagination
+    updatePagination();
+});
+
+
+
+
+
+let pageNumbers = document.querySelectorAll('.pageNumber');
+
+pageNumbers.forEach((pageNumber) => {
+    pageNumber.addEventListener('click', (e) => {
+        // Remove gray background from all icons
+        pageNumbers.forEach((item) => item.style.backgroundColor = '');
+
+        // Add gray background to the clicked icon
+        e.currentTarget.style.backgroundColor = '#EFEFEF';
+    });
+});
+
+
+
+let icons = document.querySelectorAll('.icon');
+
+icons.forEach((icon) => {
+    icon.addEventListener('click', (e) => {
+        // Remove gray background from all icons
+        icons.forEach((item) => item.style.backgroundColor = '');
+
+        // Add gray background to the clicked icon
+        e.currentTarget.style.backgroundColor = '#EFEFEF';
+    });
+});
+
+
+// background: #eff1f4;
 // l
 
 // Total number of items and items per page

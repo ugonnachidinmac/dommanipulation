@@ -5,7 +5,9 @@ document.querySelectorAll('.employeeAndRoles2 input[type="checkbox"]').forEach((
         // Get all checked checkboxes
         const selectedEmployees = Array.from(document.querySelectorAll('.employeeAndRoles2 input[type="checkbox"]:checked'))
             .map(checkbox => {
-                return checkbox.closest('.employeeAndRoles2').querySelector('.erPara p:first-child').textContent;
+                // Adjust the selector to target the correct paragraph
+                const employeeNameElement = checkbox.closest('.employeeAndRoles2')?.querySelector('.erPara p');
+                return employeeNameElement ? employeeNameElement.textContent.trim() : '';
             });
 
         // Update the input value with selected employee names and the role

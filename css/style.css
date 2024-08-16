@@ -521,7 +521,10 @@ text-align: center;
   background: #eff1f4;
   padding-top: 10px;
 }
-
+.pageNumber{
+  cursor: pointer;
+  background-color: white;
+}
 
 
 
@@ -684,34 +687,42 @@ text-align: center;
 
 /* FORM PAGE */
 
+.closeBackground{
+  width: 650px;
+  height: 850px;
+  background: none;
+  margin: 15px auto;
+  position: relative; 
+  top: -950px;
+}
+
 .formrole {
-  width: 550px;
+  width: 570px;
   height: 750px;
   /* border: 1px solid white; */
-  margin: 35px auto;
+  margin: 15px auto;
   position: relative; /* This is important to position the image relative to the div */
-  background-color: white;
+  background: none;
+  /* padding-top: 20px; */
 }
 
 .firstImage {
   position: absolute;
-  top: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  top: 10px; 
+  right: 5px; /* Adjust as needed */
   cursor: pointer; /* Optional: changes the cursor to a pointer when hovering over the image */
+
 }
 
 .mainForm {
   width: 500px;
   height: 750px;
-  top: 245px;
+  /* top: 245px; */
   left: 457px;
   padding: 20px 20px 62px 20px;
-  /* border-radius: 12px; */
-  /* border: 1px solid #10182808;
-  margin: 95px 60px 15px 15px;
-  box-shadow: 0px 8px 8px -4px #10182808;
-  box-shadow: 0px 20px 24px -4px #10182814; */
-  background: none;
+  border-radius: 12px;
+  margin-top: 40px;
+  background: white;
 }
 .searchForm {
   display: flex;
@@ -771,10 +782,11 @@ input[type="text"] {
     width: 20px;
     height: 20px;
     background-color: #fff;
-    border: 2px solid #344054;
+    /* border: 2px solid #344054; */
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+    margin-left: 120px;
 }
 
 /* Style for the checked state */
@@ -791,6 +803,66 @@ input[type="checkbox"]:checked::after {
   transform: translate(-50%, -50%);
   font-weight: bold;
 }
+}
+/* input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  /* background-color: #fff; */
+  /* border: 2px solid #344054;  */
+  /* border-radius: 50%; */
+  /* cursor: pointer;
+  position: relative; 
+} */
+
+ /* Default style for checkboxes with the class inputColored */
+ input[type="checkbox"].inputColored {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  content: '✔';
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background-color: #6A1039;
+  border-color: #6A1039;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+/* Unchecked state for checkboxes with class inputColored */
+input[type="checkbox"].inputColored::before {
+  content: '✔';
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6A1039;
+  border-color: #6A1039;
+  display: block;
+}
+
+/* Checked state for checkboxes with class inputColored */
+input[type="checkbox"].inputColored:checked {
+  background-color: #6A1039;
+  border-color: #6A1039;
+}
+
+/* Add the check mark when checked */
+input[type="checkbox"].inputColored:checked::after {
+  content: '✔';
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 .mainForm img:nth-child(1) {
   margin-bottom: 25px;
@@ -820,7 +892,7 @@ input[type="checkbox"]:checked::after {
 .employeeAndRoles img:nth-child(1) {
   width: 32px;
   height: 32px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .employeeAndRoles2 {
@@ -835,18 +907,18 @@ input[type="checkbox"]:checked::after {
 .employeeAndRoles2 img:nth-child(1) {
   width: 32px;
   height: 32px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .employeeAndRoles img:nth-child(3) {
   width: 16px;
   height: 16px;
-  margin-left: 130px;
+  /* margin-left: 130px; */
 }
 .employeeAndRoles2 input {
   border-radius: 8px;
   width: 16px;
   height: 16px;
-  margin-left: 110px;
+  /* margin-left: 110px; */
   border-radius: 50%;
   border: 1px solid #d0d5dd;
 }
